@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Principal">
+
+    <item android:id="@+id/action_add" android:title="@string/action_add"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_ordena_asc" android:title="@string/ordenaAsc"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_ordena_desc" android:title="@string/ordenaDesc"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/creaCopiaTotal" android:title="@string/creaCopiaTotal"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/leeCopiaTotal" android:title="@string/leeCopiaTotal"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <!--<item android:id="@+id/leeCopiaIncremental" android:title="@string/leeCopiaIncremental"-->
+        <!--android:orderInCategory="100" app:showAsAction="never" />-->
+    <!--<item android:id="@+id/guardaIncremental" android:title="@string/guardaIncremental"-->
+        <!--android:orderInCategory="100" app:showAsAction="never" />-->
+    <item android:id="@+id/sincronizaDatos" android:title="@string/sincronizaDatos"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <!--<item android:id="@+id/action_actualizar" android:title="@string/actualizar"-->
+        <!--android:orderInCategory="100" app:showAsAction="never" />-->
+
+</menu>

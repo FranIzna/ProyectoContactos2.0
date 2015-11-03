@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:id="@+id/textView"
+        android:layout_row="0"
+        android:layout_column="0" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edNombre"
+        android:layout_row="0"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefono"
+        android:id="@+id/textView2"
+        android:layout_row="1"
+        android:layout_column="0" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTelefono1"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:inputType="number"/>
+        <!--android:onClick="mostrar2"/>-->
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTelefono2"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:inputType="number"/>
+       <!-- android:onClick="mostrar3"/>-->
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTelefono3"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:inputType="number"/>
+        <!--android:onClick="mostrar4"/>-->
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTelefono4"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:inputType="number" />
+
+    <ImageView
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:id="@+id/imageView2"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:src="@android:drawable/ic_menu_save"
+        android:onClick="add" />
+
+    <ImageView
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:id="@+id/imageView"
+        android:layout_row="5"
+        android:layout_column="1"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="cancelar" />
+
+</GridLayout>

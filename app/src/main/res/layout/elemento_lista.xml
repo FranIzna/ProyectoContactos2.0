@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:id="@+id/imageView3"
+        android:src="@android:drawable/ic_menu_crop"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:layout_weight="0.21" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="146dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.53"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/tv1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/tv2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/edNum2"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:id="@+id/imgPlus"
+        android:src="@android:drawable/ic_menu_add"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:onClick="plus"
+        android:layout_weight="0.21" />
+
+</LinearLayout>

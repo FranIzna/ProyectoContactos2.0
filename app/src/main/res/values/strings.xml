@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Proyecto2</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_edit">Editar</string>
+    <string name="action_remove">Borrar</string>
+    <string name="action_add">Añadir</string>
+
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Teléfono</string>
+    <string name="telefonos">Teléfonos</string>
+    <string name="min">Introduce como mínimo un teléfono</string>
+    <string name="add">Añadir</string>
+    <string name="edit">Editar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="actualizar">Actualizar</string>
+
+    <string name="campoVacio">No dejes campos vacios(Introduce como mínimo un numero)</string>
+    <string name="confBorrar">¿Estas seguro de borrar a: </string>
+    <string name="interrogacion"> ?</string>
+    <string name="importante">Importante</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="salir">Salir</string>
+    <string name="numDe">Números de: </string>
+    <string name="borrasteA">Borraste a: </string>
+    <string name="opcional">Opcional</string>
+    <string name="ordenaAsc">Ordena ascendiente</string>
+    <string name="ordenaDesc">Ordena descendientemente</string>
+
+    <string name="creaCopiaTotal">Crea una copia total</string>
+    <!--<string name="creaIncremental">Crea una copia incremental</string>-->
+    <string name="leeCopiaIncremental">Lee la copia incremental</string>
+    <string name="leeCopiaTotal">Lee la copia de seguridad total</string>
+    <string name="guardaIncremental">Guarda los datos en pantalla en la incremental</string>
+    <string name="sincronizaDatos">Sincroniza telefono-incremental</string>
+    <string name="checkSincro">Sincro por defecto</string>
+    <string name="ultFechaSincro">Ult fecha Sincro</string>
+
+</resources>
