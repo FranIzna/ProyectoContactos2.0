@@ -50,13 +50,21 @@ public class Principal extends AppCompatActivity {
         sincro=(CheckBox)findViewById(R.id.checkBox);
         fechaSincro=(TextView) findViewById(R.id.tvFecha);
 
-        if (preferencia.getBoolean("sincro",false)){
+if (preferencia.getBoolean("sincro",false)){
             sincro.setChecked(true);
-            fechaSincro.setVisibility(View.VISIBLE);
+            try {
+                sincroniza();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (XmlPullParserException e) {
+                e.printStackTrace();
+            }
+//            fechaSincro.setVisibility(View.VISIBLE);
             fechaSincro.setText(/*this.getText(R.string.ultFechaSincro)
-                    +": "+*/preferencia.getString("fecha",""));
+                    +": "+*/preferencia.getString("fecha","a"));
         } else {
-            fechaSincro.setVisibility(View.INVISIBLE);
+            fechaSincro.setText("Nunca sincro");
+//            fechaSincro.setVisibility(View.INVISIBLE);
             sincro.setChecked(false);
         }
 
@@ -347,7 +355,24 @@ public class Principal extends AppCompatActivity {
         ed.commit();
 
         fecha=new GregorianCalendar();
-        String s=fecha.getTime().toString();
+        //String s=fecha.getTime().toString();
+        String s="";
+        Date d=fecha.getTime();
+
+//        switch (d.getDay()){
+//            case 0:s+="Lunes ";break;
+//            case 1:s+="Martes ";break;
+//            case 2:s+="Miercoles ";break;
+//            case 3:s+="Jueves ";break;
+//            case 4:s+="Viernes ";break;
+//            case 5:s+="Sabado ";break;
+//            case 6:s+="Domingo ";break;
+//        }
+
+        s+="Última sincronización: "+d.getDay()+"/"+d.getMonth()+"/"+(d.getYear()+1900)+" "+d.getHours()+":"+d.getMinutes();
+
+//        String s=fecha.getTime().toString();
+        fechaSincro.setText(s);
         ed.putString("fecha",s);
         ed.commit();
 
